@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import SeasonDisplay from './SeasonDisplay';
 
 const App = function() {
   return (
-      <div className="ui container comments">
-          
+      <div>
+          <SeasonDisplay></SeasonDisplay>
       </div>
   );
 }
