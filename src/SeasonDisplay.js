@@ -17,6 +17,11 @@ class SeasonDisplay extends React.Component {
             this.setState({ error: err.message})
           }
         );
+    }
+
+      componentDidMount() {
+          // Setup; initial data loading when it first shows up
+
       }
 
     render() {
@@ -32,6 +37,14 @@ class SeasonDisplay extends React.Component {
         return (
             <div>{message}</div>
         );
+    }
+
+    componentDidUpdate() {
+        // It's updated when setState is used and it's rendered
+    }
+
+    componentWillUnmount() {
+        // When we want to do some cleanup of our component
     }
 }
 
